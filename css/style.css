@@ -1,0 +1,50 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Lato, sans-serif;
+}
+body {
+	padding: 0px;
+	background: #eeeeee;
+	text-align: center;
+	color: #fff;
+}
+
+header {
+	padding: 10px;
+	height: 20px;
+	line-height: 20px;
+	background: #40414b;
+}
+.view {
+	/*width: 100px;*/
+	width: calc(100% / 3 - 40px);
+	height: 200px;
+	margin: 10px;
+	float: left;
+	border: 10px solid #fff;
+	-webkit-box-shadow: 1px 1px 2px #e6e6e6;
+	-moz-box-shadow: 1px 1px 2px #e6e6e6;
+	box-shadow: 1px 1px 2px #e6e6e6;
+	background-color: #3F51B5;
+	line-height: 200px;
+	font-size: 50px;
+}
+img {
+	width: calc(100% - 20px);
+	min-width: 250px;
+	max-width: 500px;
+	float:none;
+	clear: both;
+}
+@media only screen and (max-width:800px){
+	.view {
+		width: calc(100% / 2 - 40px);
+	}
+}
+@media only screen and (max-width:400px){
+	.view {
+		width: calc(100% / 1 - 40px);
+	}
+}
